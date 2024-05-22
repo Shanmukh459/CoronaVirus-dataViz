@@ -7,7 +7,11 @@ const height = window.innerHeight
 
 function App() {
   const data = useData()
-  return data ? <LineChart data={data} width={width} height={height} /> : <h1>Loading...</h1>
+  return data ? (
+    <LineChart data={data} width={width} height={height} />
+  ) : (
+    <h1>Loading...</h1>
+  )
 }
 
 export default App
