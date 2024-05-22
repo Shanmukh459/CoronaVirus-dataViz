@@ -17,3 +17,14 @@ line {
 text {
   font-size: 1.4em;
 }
+.domain {
+  display: none;
+}
+
+.tick line {
+  stroke: rgb(207, 207, 207);
+}
+
+.tick text {
+  fill: rgb(121, 121, 121);
+}

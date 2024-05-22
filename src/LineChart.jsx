@@ -1,14 +1,15 @@
 import { line, max, scaleLinear, scaleTime, extent } from "d3"
 import { YMarkerLine } from "./YMarkerLine"
 import { XMarkerLine } from "./XMarkerLine"
+import { XAxis } from "./XAxis"
 
 const xValue = (d) => d.date
 const yValue = (d) => d.totalDeaths
 
 const margin = {
-  top: 20,
+  top: 40,
   right: 40,
-  bottom: 40,
+  bottom: 60,
   left: 110,
 }
 
@@ -37,6 +38,7 @@ export const LineChart = ({ data, height, width }) => {
           innerHeight={innerHeight}
           value={mostRecentDate}
         />
+        <XAxis xScale={xScale} innerHeight={innerHeight} />
         <path d={lineGenerator(data)} />
       </g>
     </svg>
