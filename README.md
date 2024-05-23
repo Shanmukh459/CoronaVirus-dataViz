@@ -11,3 +11,6 @@
 
 ## Screenshot of the plot
 
+![image](https://github.com/Shanmukh459/CoronaVirus-dataViz/assets/52078988/b5f5bfa0-f79d-4423-8820-ad821b580f7b)
+
+Happy Coding!
